@@ -32,7 +32,7 @@ print(read())
 # expanded_form(70304) # return '70000 + 300 + 4'
 
 def expanded_form(num):
-    return [str(v).ljust(len(str(num)) - i, '0') for i,v in enumerate(str(num)) if v != '0']
+    return ' + '.join([str(v).ljust(len(str(num)) - i, '0') for i,v in enumerate(str(num)) if v != '0'])
 
 
 print(expanded_form(12))
